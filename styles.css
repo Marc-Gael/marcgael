@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background: #4CAF50;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+section {
+    margin: 2rem;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    display: block;
+    margin: 1rem auto;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #45a049;
+}
+
+/* Style pour le message */
+#message {
+    display: none; /* Cache le message par défaut */
+    background-color: #f0f8ff; /* Fond bleu clair */
+    color: #000; /* Texte noir */
+    padding: 1.5rem; /* Ajoute un espacement intérieur (par exemple, 24px) */
+    border: 2px solid #4CAF50; /* Bordure verte */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    text-align: center; /* Centre le texte */
+    font-size: 1.1rem; /* Taille du texte légèrement augmentée */
+    margin: 1rem auto; /* Centrer horizontalement avec un espace externe */
+    max-width: 400px; /* Largeur maximale pour éviter que le texte soit trop étalé */
+}
+
+#about img {
+    display: block;
+    margin: 0 auto;
+}
+
+.project {
+    margin: 1rem 0;
+    padding: 1rem;
+    background: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.project h3 {
+    margin-top: 0;
+    color: #4CAF50;
+}
+
+.project a {
+    display: inline-block;
+    margin-top: 0.5rem;
+    text-decoration: none;
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+.project a:hover {
+    text-decoration: underline;
+}
+
+
+#contact ul {
+    list-style: none;
+    padding: 0;
+}
+
+#contact li {
+    margin: 0.5rem 0;
+}
+
+#contact a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
