@@ -59,12 +59,11 @@ button:hover {
 #about img {
     width: 150px;
     border-radius: 50%;
-    margin-right: 1rem;
+    /*margin-right: 1rem;*/
 }
 
 #about article {
     max-width: 600px;
-    transition: transform 0.3s ease;
 }
 
 #about h1 {
