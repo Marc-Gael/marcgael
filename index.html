@@ -1,48 +1,35 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Assure une bonne mise en page sur les mobiles -->
-    <title>Marc-Gaël ZEME</title> <!-- Titre de la page, affiché dans l'onglet du navigateur -->
-    <link rel="stylesheet" href="styles.css"> <!-- Lien vers le fichier CSS -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marc-Gael</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Hello, Je suis Marc-Gaël</h1>
+        <h1>Hello, bienvenue sur ma page !</h1>
     </header>
+    <main>
+        <section id="about-me">
+            <h2>À propos de moi</h2>
+            <p>Bonjour ! Je m'appelle <strong>Marc-Gaël</strong>, je suis passionné(e) par [ton domaine].</p>
+            <p>J'aime explorer les nouvelles technologies et partager mes connaissances.</p>
+        </section>
 
-    <section id="about">
-        <img src="images\a_propos.jpeg" alt="Photo de Marc-Gaël">
-        <h1>À propos de moi 👨‍💻</h1>
-        <p>
-                Je m'appelle <strong>Marc-Gaël ZEME</strong>. Je suis passionné de programmation, de data, d'innovation technologique et d'entrepreneuriat.<br>
-                J'aime aussi explorer des solutions en gestion de produit, analyse de données 
-                et développement web.
-        </p>
-    </section>
+        <section id="my-passion">
+            <h2>Ma Passion</h2>
+            <p>[Décris ta passion et pourquoi cela te tient à cœur]</p>
+            <button id="passion-btn">En savoir plus</button>
+            <p id="passion-details" class="hidden">
+                [Plus de détails sur ta passion]
+            </p>
+        </section>
+    </main>
 
-    <section id="passion">
-        <h2>Ma passion ❤️</h2>
-        <p>
-            Ma passion, la plus ardente et au-dessus du plaisir que j'ai lorsque j'apprends la programmation, c'est de faire et écouter de la musique.<br>
-            C'est quelque chose que j'aime faire. J'ai même eu une brève carrière d'artiste😂<br>
-            Mais je ne me laisse pas décourager, je vais me relancer😤.
-        </p>
-    </section>
-
-    <section id="contact">
-        <h2>Me contacter 📬</h2>
-        <p>Vous pouvez me joindre par e-mail ou sur mes réseaux sociaux :</p>
-        <ul>
-            <li><a href="mailto:gaelzeme1@gmail.com">Envoyer un e-mail</a></li>
-            <li><a href="www.linkedin.com/in/marc-gaël-zeme" target="_blank">LinkedIn</a></li>
-            <li><a href="https://github.com/marc-gael" target="_blank">GitHub</a></li>
-        </ul>
-    </section>
-
-    <button id="showMessage">Allez, cliquez sur ce button ✨</button> <!-- Bouton interactif avec un émoji pour attirer l'attention -->
-    <p id="message" style="display: none;">Merci de visiter ma page ! 😊</p> <!-- Message caché avec un émoji de remerciement -->
-
-    <script src="script.js"></script> <!-- Lien vers le fichier JavaScript pour ajouter des interactions -->
+    <footer>
+        <p>Merci de visiter ma page !</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>

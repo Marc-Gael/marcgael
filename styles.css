@@ -1,9 +1,9 @@
-/* Base styles */
+/* Style général */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
+    background-color: #f4f4f9;
     color: #333;
     line-height: 1.6;
 }
@@ -16,119 +16,46 @@ header {
     padding: 1rem 0;
 }
 
-header h1 {
-    font-size: 2.5rem;
-    margin: 0;
-}
-
-/* About section */
-#about {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem;
-    background-color: #ffffff;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin: 1rem;
-    border-radius: 10px;
-}
-
-#about img {
-    max-width: 150px;
-    border-radius: 50%;
-    margin-right: 2rem;
-}
-
-#about h1 {
-    font-size: 2rem;
-    color: #4CAF50;
-    margin-bottom: 1rem;
-}
-
-/* Passion section */
-#passion {
-    padding: 2rem;
-    background-color: #f4f4f4;
-    text-align: center;
-    margin: 1rem;
-    border-radius: 10px;
-}
-
-#passion h2 {
-    color: #4CAF50;
-    margin-bottom: 1rem;
-}
-
-/* Contact section */
-#contact {
-    padding: 2rem;
-    text-align: center;
-    background-color: #ffffff;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin: 1rem;
-    border-radius: 10px;
-}
-
-#contact h2 {
-    color: #4CAF50;
-    margin-bottom: 1rem;
-}
-
-#contact ul {
-    list-style: none;
-    padding: 0;
-}
-
-#contact ul li {
-    margin: 0.5rem 0;
-}
-
-#contact ul li a {
-    color: #4CAF50;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s;
-}
-
-#contact ul li a:hover {
-    color: #333;
-}
-
-/* Button */
-#showMessage {
-    display: block;
+/* Section */
+section {
     margin: 2rem auto;
-    padding: 1rem 2rem;
+    max-width: 800px;
+    padding: 1rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #4CAF50;
+}
+
+/* Bouton */
+button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
     background-color: #4CAF50;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 1rem;
-    transition: background-color 0.3s;
 }
 
-#showMessage:hover {
+button:hover {
     background-color: #45a049;
 }
 
-/* Message */
-#message {
-    text-align: center;
-    font-size: 1.2rem;
-    color: #4CAF50;
-    margin-top: 1rem;
+/* Texte caché */
+.hidden {
+    display: none;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    #about {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    #about img {
-        margin-bottom: 1rem;
-    }
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #4CAF50;
+    color: white;
 }
