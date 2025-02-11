@@ -3,33 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marc-Gael</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Ma Page Web Personnelle</title>
+    <link rel="stylesheet" href="style.css"> <!-- Lien vers le fichier CSS -->
 </head>
 <body>
     <header>
-        <h1>Hello, bienvenue sur ma page !</h1>
+        <h1>Bienvenue sur ma page web !</h1>
     </header>
+
     <main>
-        <section id="about-me">
+        <!-- Section "À propos de moi" -->
+        <section id="about">
             <h2>À propos de moi</h2>
-            <p>Bonjour ! Je m'appelle <strong>Marc-Gaël</strong>, je suis passionné(e) par [ton domaine].</p>
-            <p>J'aime explorer les nouvelles technologies et partager mes connaissances.</p>
+            <img src="images\a_propos.jpeg">
+            <p>Salut ! Je m'appelle [Ton Nom]. J'ai [Ton Âge] ans et je suis passionné(e) par [Ta Passion]. Actuellement, je travaille/apprends dans le domaine de [Ton Domaine]. Dans mon temps libre, j'aime explorer [Tes Centres d'Intérêt].
+            </p>
         </section>
 
-        <section id="my-passion">
-            <h2>Ma Passion</h2>
-            <p>[Décris ta passion et pourquoi cela te tient à cœur]</p>
-            <button id="passion-btn">En savoir plus</button>
-            <p id="passion-details" class="hidden">
-                [Plus de détails sur ta passion]
-            </p>
+        <!-- Section "Ma passion" -->
+        <section id="passion">
+            <h2>Ma passion</h2>
+            <p>Depuis que je suis jeune, je suis fasciné(e) par [Ta Passion]. Ce qui me plaît le plus, c'est [Pourquoi cette passion te motive]. Cela m'a permis de découvrir [Des choses liées à ta passion].</p>
+        </section>
+
+        <!-- Interaction JavaScript -->
+        <section id="interaction">
+            <h2>Interagissez avec moi !</h2>
+            <button id="messageButton">Cliquez ici</button>
+            <p id="message"></p>
         </section>
     </main>
 
     <footer>
-        <p>Merci de visiter ma page !</p>
+        <p>&copy; 2025 - [Ton Nom]</p>
     </footer>
-    <script src="script.js"></script>
+
+    <script src="script.js"></script> <!-- Lien vers le fichier JavaScript -->
 </body>
 </html>

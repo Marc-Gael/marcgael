@@ -1,61 +1,53 @@
+/* Réinitialisation des marges et paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* Style général */
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f9;
-    color: #333;
     line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
 }
 
-/* Header */
 header {
-    background-color: #4CAF50;
-    color: white;
     text-align: center;
-    padding: 1rem 0;
+    background: #4CAF50;
+    color: white;
+    padding: 20px;
+    margin-bottom: 20px;
 }
 
-/* Section */
+h1, h2 {
+    color: #333;
+}
+
 section {
-    margin: 2rem auto;
-    max-width: 800px;
-    padding: 1rem;
     background: white;
+    padding: 20px;
+    margin-bottom: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-h2 {
-    color: #4CAF50;
-}
-
-/* Bouton */
-button {
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    margin-top: 1rem;
+#interaction button {
     background-color: #4CAF50;
     color: white;
     border: none;
-    border-radius: 5px;
+    padding: 10px 20px;
     cursor: pointer;
+    border-radius: 5px;
 }
 
-button:hover {
+#interaction button:hover {
     background-color: #45a049;
 }
 
-/* Texte caché */
-.hidden {
-    display: none;
-}
-
-/* Footer */
 footer {
     text-align: center;
-    margin-top: 2rem;
-    padding: 1rem;
-    background-color: #4CAF50;
-    color: white;
+    margin-top: 20px;
 }

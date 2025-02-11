@@ -1,15 +1,8 @@
-// Interaction pour le bouton "En savoir plus"
-document.addEventListener('DOMContentLoaded', () => {
-    const button = document.getElementById('passion-btn');
-    const details = document.getElementById('passion-details');
+// Sélectionner le bouton et le paragraphe où afficher le message
+const button = document.getElementById('messageButton');
+const messageElement = document.getElementById('message');
 
-    button.addEventListener('click', () => {
-        if (details.classList.contains('hidden')) {
-            details.classList.remove('hidden');
-            button.textContent = "Réduire";
-        } else {
-            details.classList.add('hidden');
-            button.textContent = "En savoir plus";
-        }
-    });
+// Fonction appelée lorsqu'on clique sur le bouton
+button.addEventListener('click', function() {
+    messageElement.textContent = 'Merci d\'avoir cliqué ! 😊';
 });
