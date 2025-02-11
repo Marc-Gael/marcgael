@@ -1,91 +1,78 @@
+/* Base styles */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f9f9f9;
     color: #333;
-    display: flex;
-    flex-direction: column;
+    line-height: 1.6;
 }
 
+/* Header */
 header {
-    background: #4CAF50;
+    background-color: #4CAF50;
     color: white;
-    padding: 1rem;
     text-align: center;
-    font-size: 1.5rem;
+    padding: 1rem 0;
 }
 
-section {
-    margin: 2rem;
-    padding: 1rem;
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
 }
 
-button {
-    display: block;
-    margin: 1rem auto;
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
-    background: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+/* About section */
+#about {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 1rem;
+    border-radius: 10px;
 }
 
-button:hover {
-    background: #45a049;
-}
-
-/* Style pour le message */
-#message {
-    display: none; /* Cache le message par défaut */
-    background-color: #f0f8ff; /* Fond bleu clair */
-    color: #000; /* Texte noir */
-    padding: 1.5rem; /* Ajoute un espacement intérieur (par exemple, 24px) */
-    border: 2px solid #4CAF50; /* Bordure verte */
-    border-radius: 8px; /* Coins arrondis */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre légère */
-    text-align: center; /* Centre le texte */
-    font-size: 1.1rem; /* Taille du texte légèrement augmentée */
-    margin: 1rem auto; /* Centrer horizontalement avec un espace externe */
-    max-width: 400px; /* Largeur maximale pour éviter que le texte soit trop étalé */
-}
-
-/* Styles pour la section "À propos" */
-#about .profil {
-    display: flex; /* Active Flexbox */
-    align-items: flex-start; /* Aligne les éléments au début verticalement */
-    gap: 1rem; /* Ajoute un espace entre l'image et le texte */
-}
-
-/* Styles pour l'image */
 #about img {
-    width: 150px; /* Largeur de l'image */
-    border-radius: 50%; /* Rend l'image circulaire */
+    max-width: 150px;
+    border-radius: 50%;
+    margin-right: 2rem;
 }
 
-/* Styles pour le contenu texte */
-#about .text-content {
-    display: flex; /* Active Flexbox sur le conteneur texte */
-    flex-direction: column; /* Empile les éléments verticalement */
-    justify-content: center; /* Centre les éléments verticalement si nécessaire */
-}
-
-/* Styles optionnels pour le titre */
 #about h1 {
-    margin: 0 0 0.5rem 0; /* Réduit l'espacement autour du titre */
-    font-size: 1.5rem; /* Ajuste la taille du texte */
+    font-size: 2rem;
+    color: #4CAF50;
+    margin-bottom: 1rem;
 }
 
-/* Styles optionnels pour les paragraphes */
-#about p {
-    margin: 0; /* Supprime la marge par défaut des paragraphes */
-    line-height: 1.6; /* Ajoute un espacement confortable entre les lignes */
+/* Passion section */
+#passion {
+    padding: 2rem;
+    background-color: #f4f4f4;
+    text-align: center;
+    margin: 1rem;
+    border-radius: 10px;
+}
+
+#passion h2 {
+    color: #4CAF50;
+    margin-bottom: 1rem;
+}
+
+/* Contact section */
+#contact {
+    padding: 2rem;
+    text-align: center;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 1rem;
+    border-radius: 10px;
+}
+
+#contact h2 {
+    color: #4CAF50;
+    margin-bottom: 1rem;
 }
 
 #contact ul {
@@ -93,16 +80,55 @@ button:hover {
     padding: 0;
 }
 
-#contact li {
+#contact ul li {
     margin: 0.5rem 0;
 }
 
-#contact a {
+#contact ul li a {
     color: #4CAF50;
     text-decoration: none;
     font-weight: bold;
+    transition: color 0.3s;
 }
 
-#contact a:hover {
-    text-decoration: underline;
+#contact ul li a:hover {
+    color: #333;
+}
+
+/* Button */
+#showMessage {
+    display: block;
+    margin: 2rem auto;
+    padding: 1rem 2rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+#showMessage:hover {
+    background-color: #45a049;
+}
+
+/* Message */
+#message {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #4CAF50;
+    margin-top: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #about img {
+        margin-bottom: 1rem;
+    }
 }
