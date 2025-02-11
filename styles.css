@@ -59,7 +59,8 @@ button:hover {
 #about {
     display: flex;
     align-items: center;
-    padding: 2rem;
+    margin: 2rem;
+    padding: 1rem;
     background-color: #f9f9f9;
     max-width: 800px;
     margin: 0 auto;
