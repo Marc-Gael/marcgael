@@ -64,6 +64,7 @@ button:hover {
 
 #about article {
     max-width: 600px;
+    transition: transform 0.3s ease;
 }
 
 #about h1 {
@@ -76,33 +77,6 @@ button:hover {
     line-height: 1.6;
     margin-bottom: 0.5rem;
 }
-
-
-.project {
-    margin: 1rem 0;
-    padding: 1rem;
-    background: #f4f4f4;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.project h3 {
-    margin-top: 0;
-    color: #4CAF50;
-}
-
-.project a {
-    display: inline-block;
-    margin-top: 0.5rem;
-    text-decoration: none;
-    color: #4CAF50;
-    font-weight: bold;
-}
-
-.project a:hover {
-    text-decoration: underline;
-}
-
 
 #contact ul {
     list-style: none;
